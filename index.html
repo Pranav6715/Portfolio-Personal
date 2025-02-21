@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranav-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Pranav's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#ex">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection" id="home">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Pranav</span>
+
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="button">
+            <button
+              class="btn"
+              onclick="window.location.href='https://acrobat.adobe.com/id/urn:aaid:sc:AP:c15d5355-2b1f-41e1-bf8a-d4408a4c2833'"
+            >
+              View Resume
+            </button>
+            <button
+              class="btn"
+              onclick="window.location.href='https://github.com/Pranav6715'"
+            >
+              Visit Github
+            </button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="main-img.webp" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="skills-section" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-buttons">
+          <button onclick="showSkills('frontend')">Frontend</button>
+          <button onclick="showSkills('backend')">Backend</button>
+          <button onclick="showSkills('tools')">Tools</button>
+          <!-- New Button -->
+        </div>
+        <div class="skills-container">
+          <div id="frontend" class="skills-box active">
+            <h3>Frontend Technologies</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Tailwind CSS</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div id="backend" class="skills-box">
+            <h3>Backend Technologies</h3>
+            <ul>
+              <li>Java</li>
+              <li>Spring Boot</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          <div id="tools" class="skills-box">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Postman</li>
+              <li>VS Code</li>
+              <li>IntelliJ IDEA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="education-experience-section" id="ex">
+        <h2>Education & Experience</h2>
+        <div class="edu-exp-buttons">
+          <button onclick="showSection('education')">Education</button>
+          <button onclick="showSection('experience')">Experience</button>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-box" id="education">
+            <h3>Education</h3>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h4>DY Patil University Ambi, Pune</h4>
+                <p>B.Tech in Computer Engineering (2022-2025)</p>
+                <p>CGPA - 8.40</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h4>Ekalavya Shikshan Sanstha, Pune</h4>
+                <p>Diploma in Computer Technology (2019-2022)</p>
+                <p>Percentage - 80.91%</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <h4>Mahesh Vidyalaya School, Pune</h4>
+                <p>10th SSC (2018-2019)</p>
+                <p>Percentage - 73%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-box" id="experience">
+            <h3>Experience</h3>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+              <div class="timeline-content">
+                <h4>Technogrowth Software Solutions Pvt. Ltd</h4>
+                <p>
+                  Web Development Intern <br />
+                  Jul 2021 – Sep 2021
+                </p>
+                <p>Location - Remote</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+              <div class="timeline-content">
+                <h4>Intern Pe.</h4>
+                <p>
+                  Java Development Intern <br />
+                  Jul 2023 – Aug 2023
+                </p>
+                <p>Location - Remote</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="projects-section" id="project">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <img src="Ecom.png" alt="Project 1" />
+            <h3>Ecommarce Website</h3>
+            <a
+              href="https://github.com/Pranav6715/E-COMMERCE-WEBSITE"
+              target="_blank"
+              class="project-link"
+              >🔗</a
+            >
+          </div>
+          <div class="project">
+            <img src="University.png" alt="Project 2" />
+            <h3>University Management System</h3>
+            <a
+              href="https://github.com/Pranav6715/University-Management-System"
+              target="_blank"
+              class="project-link"
+              >🔗</a
+            >
+          </div>
+        </div>
+        <button
+          class="view-more-btn"
+          onclick="window.location.href='https://github.com/Pranav6715'"
+        >
+          View More
+        </button>
+      </section>
+      <hr />
+      <section class="contact-section" id="contact">
+        <h2>Contact</h2>
+        <p>Drop a mail at me:</p>
+        <a href="#" class="contact-mail">pranavghaytadakar143@gmail.com</a>
+      </section>
+      <hr />
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h4>Thanks for checking in!</h4>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/pranav-ghaytadkar-01b17521a/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>LinkTree</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyrights &#169; Pranav's Portfolio | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Java Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      function showSkills(skill) {
+        document
+          .querySelectorAll(".skills-box")
+          .forEach((box) => (box.style.display = "none"));
+        document.getElementById(skill).style.display = "block";
+      }
+      showSkills("frontend");
+    </script>
+    <script>
+      function showSection(section) {
+        document.getElementById("education").style.display = "none";
+        document.getElementById("experience").style.display = "none";
+        document.getElementById(section).style.display = "block";
+      }
+      showSection("education");
+    </script>
+  </body>
+</html>
